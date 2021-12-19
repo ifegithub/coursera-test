@@ -1,0 +1,213 @@
+@font-face {
+	font-family:booter;
+	src: url(../font/BOOTERFF.ttf);
+	font-weight: 900;
+	font-style: normal;
+}
+@font-face {
+	font-family: meta-mania;
+	src: url(../font/Metal\ Mania/MetalMania-Regular.ttf);
+	font-weight: 900;
+	font-style: normal;
+}
+body {
+	font-size: 16px;
+	color: #fff;
+	background-color: #61122f;
+	font-family: sans-serif;
+}
+/** HEADER **/
+#header-nav {
+	background-color: #f6b319;
+	border-radius: 0;
+	border: 0px
+}
+
+#logo-img {
+	background: url('../images/restaurant-logo_large.png') no-repeat;
+	width: 150px;
+	height: 150px;
+	margin: 10px 15px 10px 0;
+	/* border: 1px solid black; */
+}
+
+.navbar-brand h1{
+	font-family: meta-mania;
+	color: #557c3e;
+	font-size: 	2.0em;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-shadow: 1px 1px 1px #222;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+.navbar-brand a:hover, .navbar-brand a:focus{
+	text-decoration:none;
+}
+#nav-list {
+	margin-top: 10px;
+}
+#nav-list a {
+	color: #951C49;
+	text-align: center;
+}
+#nav-list a:hover {
+	background: #dbd8d8;
+}
+#nav-list a span {
+	font-size: 1.8em;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+	border: 1px solid#61122f;
+}
+.navbar-header button.navbar-toggle{
+	clear: both;
+	margin-top: -30px;
+}
+
+.container > a {
+	font-size: 1.5em;
+	display: block;
+	margin: 0px;
+	padding: 10px;
+	border: 2px solid #fff;
+	background-color: #f6b319;
+	color: #951c49;
+	margin-bottom: 20px;
+}
+.container > a:hover {
+	text-decoration: none;
+}
+/* END HEADER */
+
+/* HOME PAGE */
+
+#ikokore-tile, #abacha-tile, #tuo-shinkafa-tile {
+	height: 250px;
+	width: 100%;
+	margin-bottom: 15px;
+	position: relative;
+	border: 2px solid #3F0C1F;
+	overflow: hidden;
+	background-color: azure;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+#ikokore-tile:hover, #abacha-tile:hover, #tuo-shinkafa-tile:hover {
+	box-shadow: 0 1px 5px 1px #cccccc;
+}
+#ikokore-tile span, #abacha-tile span, #tuo-shinkafa-tile span{
+	position: absolute;
+  	top: 0;
+  	right: 0;
+  	width: 100%;
+  	text-align: center;
+  	font-size: 1.6em;
+  	text-transform: uppercase;
+  	background-color: #000;
+  	color: #fff;
+  	opacity: .8;
+}
+#ikokore-tile p, #abacha-tile p, #tuo-shinkafa-tile p{
+	margin: 50px 10px 10px 10px;
+	font-size:large;
+	color: black;
+}
+#ikokore-tile p:hover, #abacha-tile p:hover, #tuo-shinkafa-tile p:hover{
+cursor: context-menu;
+}
+
+#home-tiles a{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	margin: 10px;
+}	
+  /* END HOME PAGE */
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+	#logo-img{
+		background: url(../images/restaurant-logo_medium.png);
+		background-repeat: no-repeat;
+		width: 100px;
+		height: 100px;
+		margin: 5px 5px 5px 0;
+	}
+	#ikokore-tile, #abacha-tile, #tuo-shinkafa-tile {
+		height: 300px;
+		width: 100%;
+		margin-bottom: 15px;
+		position: relative;
+		border: 2px solid #3F0C1F;
+		overflow: hidden;
+		background-color: azure;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+
+
+	
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+	
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+	.navbar-brand{
+		padding-top: 10px;
+		height: 80px;
+	}
+	.navbar-brand h1{
+		padding-top: 10px;
+		font-size: 5vw;
+	}
+	#collapsable-nav a { /* Collapsed nav menu text */
+		font-size: 1.2em; /*(1.2 x 16px= 19.2px)*/
+	}
+	#collapsable-nav a span{
+	 	font-size: 1em; /* which is 19.2px*/
+		margin-right: 0.260em; /* Xem times 19.2px = 5px */ 
+	}
+
+  	/* Home Page */
+ 	
+	#ikokore-tile, #abacha-tile, #tuo-shinkafa-tile{
+	width: 360px;
+	margin: 0 auto 15px;
+	}
+}
+/********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
+@media (max-width: 479px) {
+	/* Header */
+	.navbar-brand h1 { /* Restaurant name */
+	  padding-top: 5px;
+	  font-size: 6vw;
+	}
+	/* End Header */
+
+	/* Home page */
+	#ikokore-tile, #abacha-tile, #tuo-shinkafa-tile{
+	  width: 280px;
+	  margin: 0 auto 15px;
+	}
+	.col-xxs-12{
+		position: relative;
+		min-height: 1px; 
+		padding-right: 15px;
+		padding-left: 15px;
+		float: left;
+		width: 100%;
+		margin: 0 auto 15px;
+	}
+}
+
